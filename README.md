@@ -25,7 +25,7 @@ En la terminal, clona el repositorio utilizando el siguiente comando:
 
 ### 2. Correr el Cliente
 
-En una nueva consol ejecuta los siguientes comandos
+En una nueva consola ejecuta los siguientes comandos
 
 
 - cd PruebaTecnica
