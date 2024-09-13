@@ -1,42 +1,70 @@
-# PruebaTecnica
+# Guía de Instalación y Uso - **Prueba Técnica**
 
+Este proyecto es una aplicación cliente-servidor que permite a los administradores gestionar usuarios y a los usuarios registrar sus ingresos. El servidor está conectado a una base de datos en MongoDB Atlas.
 
-comandos para correr este proyecto
+### Requisitos
+- **Node.js** instalado en tu máquina.
+- **Conexión a internet** (la base de datos está alojada en MongoDB Atlas).
+- **Git** para clonar el repositorio.
 
-requisitos:
-- Node instalado
-- Conexion a internet (Base de datos alojada en mongodb Atlas)
+---
 
+## Pasos para la Instalación
 
+### 1. Clonar el Repositorio
+
+En la terminal, clona el repositorio utilizando el siguiente comando:
+
+\`\`\`bash
 git clone https://github.com/Juandiegogb/PruebaTecnica
+\`\`\`
 
-## Correr cliente
-### crear una nueva consola
+---
+
+## Correr la Aplicación
+
+### 2. Correr el Cliente
+
+En una nueva consola, navega a la carpeta del cliente y ejecuta los siguientes comandos:
+
+\`\`\`bash
 cd PruebaTecnica
 cd client
-npm i 
+npm install
 npm run dev
+\`\`\`
 
+Esto iniciará el servidor de desarrollo para el cliente, que estará accesible en tu navegador.
 
-## Correr servidor
-### crear una nueva consola
+### 3. Correr el Servidor
 
+Abre una **nueva consola** y navega a la carpeta del servidor:
 
+\`\`\`bash
 cd PruebaTecnica
 cd server
-npm i
+npm install
 npm run dev
+\`\`\`
 
-# Instrucciones de uso 
+Esto iniciará el servidor backend.
 
-## Admin
-- ingresar
-  - usuario : jdiego
-  - password : 1234456
-![alt text](image.png)
-En el lado izquierdo vera la lista de usuarios que tiene la base de datos y con el form podra crear un nuevo usuario
+---
 
-## User
-- Ingresar con algun usuario creado anteriormente
-![alt text](image-1.png)
-En el lado izquierdo vera los ingresos realizado anteriormente con su informacion, en este caso se configuro el backend para realziar un solo registro por día simulando el ingreso a labores en la mañana
+## Instrucciones de Uso
+
+### **Acceso como Administrador**
+
+1. Abre el navegador y accede a la URL donde corre el cliente (normalmente \`http://localhost:3000\`).
+2. Inicia sesión con las siguientes credenciales:
+
+    - **Usuario**: \`jdiego\`
+    - **Contraseña**: \`1234456\`
+
+3. En el panel izquierdo, verás la lista de usuarios almacenados en la base de datos. Puedes agregar nuevos usuarios utilizando el formulario disponible.
+
+### **Acceso como Usuario**
+
+1. Ingresa con las credenciales de algún usuario creado previamente.
+2. En el panel izquierdo, verás tus registros de ingresos anteriores. El sistema está configurado para permitir un solo registro por día, simulando el ingreso laboral en la mañana.
+
