@@ -27,12 +27,12 @@ git clone https://github.com/Juandiegogb/PruebaTecnica
 
 En una nueva consola, navega a la carpeta del cliente y ejecuta los siguientes comandos:
 
-\`\`\`bash
-cd PruebaTecnica
-cd client
-npm install
-npm run dev
-\`\`\`
+
+- cd PruebaTecnica
+- cd client
+- npm install
+- npm run dev
+
 
 Esto iniciará el servidor de desarrollo para el cliente, que estará accesible en tu navegador.
 
@@ -40,12 +40,12 @@ Esto iniciará el servidor de desarrollo para el cliente, que estará accesible 
 
 Abre una **nueva consola** y navega a la carpeta del servidor:
 
-\`\`\`bash
-cd PruebaTecnica
-cd server
-npm install
-npm run dev
-\`\`\`
+
+- cd PruebaTecnica
+- cd server
+- npm install
+- npm run dev
+
 
 Esto iniciará el servidor backend.
 
