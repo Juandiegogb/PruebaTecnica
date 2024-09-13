@@ -47,14 +47,19 @@ controller.login = async (req, res) => {
   const { username, password } = req.body;
   try {
     const query = await user.find({ username });
-    const userInfo = query[0].toObject();
+    let userInfo;
+    try {
+      userInfo = query[0].toObject();
+    } catch (error) {
+      userInfo = false;
+    }
     if (userInfo) {
       const comparePassword = bcrypt.compareSync(password, userInfo.password);
       if (comparePassword) {
         delete userInfo.password;
         const token = createToken(userInfo);
-        res.cookie("token", token);
-        res.status(200).json({ message: "fineee" });
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ userInfo , message: "fineee" });
       } else {
         res.status(400).json({ message: "Incorrect password" });
       }

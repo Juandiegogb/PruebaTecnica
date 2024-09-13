@@ -10,7 +10,7 @@ dotenv.config({ path: "./src/.env" });
 const app = express();
 const port = process.env.port || 3000;
 
-app.use(cors({ origin: "", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 app.use(cookieParser());
 app.use(express.json());
 app.use(router);

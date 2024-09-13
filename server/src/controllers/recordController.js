@@ -2,7 +2,7 @@ import record from "../models/recordModel.js";
 const controller = {};
 
 controller.createRecord = async (req, res) => {
-  const owner = req.user._id;
+  const owner = req.params.id;
   const dateTime = new Date();
   const date = dateTime.toLocaleDateString();
   const time = dateTime.toLocaleTimeString();

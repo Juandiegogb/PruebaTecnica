@@ -5,11 +5,11 @@ import userController from "../controllers/usersController.js";
 import { verify } from "../tools/token.js";
 import recordController from "../controllers/recordController.js";
 
-router.post("/createUser", verify, userController.createUser);
-router.get("/getUsers", verify, userController.findUsers);
-router.post("/deleteUser/:id", verify, userController.deleteUser);
+router.post("/createUser",  userController.createUser);
+router.get("/getUsers",  userController.findUsers);
+router.post("/deleteUser/:id",  userController.deleteUser);
 router.post("/login", userController.login);
 router.post("/logout", userController.logout);
-router.post("/createRecord", verify, recordController.createRecord);
-router.get("/getRecords/:ownerid", verify, recordController.getRecords);
+router.post("/createRecord/:id",  recordController.createRecord);
+router.get("/getRecords/:ownerid",  recordController.getRecords);
 export default router;
