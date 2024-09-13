@@ -15,9 +15,9 @@ Este proyecto es una aplicación cliente-servidor que permite a los administrado
 
 En la terminal, clona el repositorio utilizando el siguiente comando:
 
-\`\`\`bash
-git clone https://github.com/Juandiegogb/PruebaTecnica
-\`\`\`
+
+- git clone https://github.com/Juandiegogb/PruebaTecnica
+
 
 ---
 
@@ -60,11 +60,15 @@ Esto iniciará el servidor backend.
 
     - **Usuario**: \`jdiego\`
     - **Contraseña**: \`1234456\`
+![alt text](image.png)
 
 3. En el panel izquierdo, verás la lista de usuarios almacenados en la base de datos. Puedes agregar nuevos usuarios utilizando el formulario disponible.
 
 ### **Acceso como Usuario**
 
+
+
 1. Ingresa con las credenciales de algún usuario creado previamente.
 2. En el panel izquierdo, verás tus registros de ingresos anteriores. El sistema está configurado para permitir un solo registro por día, simulando el ingreso laboral en la mañana.
 
+![alt text](image-1.png)
