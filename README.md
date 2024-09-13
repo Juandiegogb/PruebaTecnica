@@ -25,7 +25,7 @@ En la terminal, clona el repositorio utilizando el siguiente comando:
 
 ### 2. Correr el Cliente
 
-En una nueva consola, navega a la carpeta del cliente y ejecuta los siguientes comandos:
+En una nueva consol ejecuta los siguientes comandos
 
 
 - cd PruebaTecnica
@@ -34,11 +34,11 @@ En una nueva consola, navega a la carpeta del cliente y ejecuta los siguientes c
 - npm run dev
 
 
-Esto iniciará el servidor de desarrollo para el cliente, que estará accesible en tu navegador.
+Esto iniciará el cliente.
 
 ### 3. Correr el Servidor
 
-Abre una **nueva consola** y navega a la carpeta del servidor:
+Abre una **nueva consola** y ejecuta los siguientes comandos:
 
 
 - cd PruebaTecnica
